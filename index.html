@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Calculate</title>
+    <link rel="stylesheet" href="sstyle.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5f7ff; /* Light Pink Background */
+}
+
+.start-page {
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.start-page button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #f94551; /* Violet Button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.start-page button:hover {
+    background-color: #6a1b9a; /* Darker Violet on Hover */
+}
+</style>
+
+<body>
+    <center>
+    <div class="start-page">
+        <h1>Welcome to the Calculator</h1>
+        <button onclick="goToCalculator()" id="goToCalcButton">Go to Calculator</button>
+    </div>
+    </center>
+    <script src="script.js"></script>
+    <script>
+        function goToCalculator() {
+            document.getElementById('goToCalcButton').style.backgroundColor = '#673ab7'; /* Change Button Color */
+            window.location.href = 'calculator.html';
+        }
+    </script>
+</body>
+</html>
